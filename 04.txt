@@ -1,0 +1,252 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 입력 양식 태그
+Ⅰ
+입력 양식
+21 입력 양식 태그
+Ⅰ
+입력 양식 개요
+ method 속성 : 입력 양식에 입력한 데이터를 전달하는 방식
+ action 속성 : 입력 양식에 입력한 데이터를 전달하는 장소
+31 입력 양식 태그
+Ⅰ
+입력 양식 개요
+ GET 방식 : 주소에 데이터를 입력해서 전달, 크기가 한정됨
+ POST 방식 : 주소를 변경하지 않고 비밀스럽게 데이터를 전달, 용량 제한X
+41 입력 양식 태그
+Ⅰ
+입력 양식 종류
+51 입력 양식 태그
+Ⅰ
+입력 양식 종류
+61 입력 양식 태그
+Ⅰ
+form_basic.html
+<body>
+<form>
+<!-- 사용자가 입력하는 입력 양식 -->
+<input type="text" name="text" value="text"><br>
+<input type="password" name="password” value="password"><br>
+<input type="file" name="file" value="file"><br>
+<input type="checkbox" name="checkbox" value="checkbox"><br>
+<input type="radio" name="radio" value="radio"><br>
+<!-- 보이지 않는 입력 양식 -->
+<input type="hidden" name="hidden" value="hidden"><br>
+<!-- 버튼 -->
+<input type="button" value="button"><br>
+<input type="reset" value="reset"><br>
+<input type="submit" value="submit"><br>
+<input type="image" src="http://via.placeholder.com/100x100">
+</form>
+</body>
+71 입력 양식 태그
+Ⅰ
+label 태그
+<form>
+<label for="name">이름</label>
+<input id="name" type="text">
+...(생략)...
+</form>
+81 입력 양식 태그
+Ⅰ
+라디오 버튼
+<input type="radio" name="그룹명" value="값">
+ name 속성으로 선택 대상 그룹 지정
+ 여러 개의 버튼 구성 시 그룹명이 동일해야 함
+ value 속성으로 선택했을 때 가질 값 지정
+91 입력 양식 태그
+Ⅰ
+form_basic2.html
+<body>
+<form>
+<table>
+<tr>
+<td><label for="username">이름</label></td>
+<td><input id="username" type="text" name="username"></td>
+</tr>
+<tr> radio 버튼은 name 속성을 같게 입력
+<td>성별</td> 해야 여러 항목 중 하나만 선택됨
+<td>
+<input id="man" type="radio" name="gender" value="m">
+<label for="man">남자</label>
+<input id="woman" type="radio" name="gender" value="w">
+<label for="woman">여자</label>
+</td>
+</tr>
+</table>
+<input type="submit" value="가입">
+</form>
+</body>
+101 입력 양식 태그
+Ⅰ
+select
+ select 태그 내부에 넣으면 옵션 선택 요소가 생성됨
+<select name="이름" [multiple]>
+<option [value="값"]>타이틀</option>
+<option [value="값"]>타이틀</option>
+….
+</select>
+111 입력 양식 태그
+Ⅰ
+form_select.html
+<body>
+<select>
+<option>김밥</option>
+<option>떡볶이</option>
+<option>순대</option>
+<option>어묵</option>
+</select>
+</body>
+121 입력 양식 태그
+Ⅰ
+form_selectMultiple.html
+<body>
+<select multiple="multiple">
+<option>김밥</option>
+<option>떡볶이</option>
+<option>순대</option>
+<option>어묵</option>
+</select>
+</body>
+131 입력 양식 태그
+Ⅰ
+form_selectGroup.html
+<body>
+<select>
+<optgroup label="HTML5">
+<option>Multimedia Tag</option>
+<option>Connectivity</option>
+<option>Device Access</option>
+</optgroup>
+<optgroup label="CSS3">
+<option>Animation</option>
+<option>3D Transform</option>
+</optgroup>
+</select>
+</body>
+141 입력 양식 태그
+Ⅰ
+fieldset
+<form>
+<fieldset>
+<legend>이름</legend>
+….
+</fieldset>
+</form>
+151 입력 양식 태그
+Ⅰ
+form_fieldset.html
+<body>
+<form>
+<fieldset>
+<legend>입력 양식</legend>
+<table>
+<tr>
+<td><label for="name">이름</label></td>
+<td><input id="name" type="text"></td>
+</tr>
+<tr>
+<td><label for="mail">이메일</label></td>
+<td><input id="mail" type="email"></td>
+</tr>
+</table>
+<input type="submit">
+</fieldset>
+</form>
+</body>
+161 입력 양식 태그
+Ⅰ
+<textarea>
+ 엔터, 탭, 스페이스가 그대로 출력됨
+<body>
+<textarea>
+Textarea 태그
+Textarea 태그
+</textarea>
+</body>
+<body>
+<textarea>Textarea 태그
+Textarea 태그</textarea>
+</body>
+171 입력 양식 태그
+Ⅰ
+note_textarea.html
+<body>
+<h4>잘못된 형태</h4>
+<textarea>
+Textarea 태그
+Textarea 태그
+</textarea>
+<h4>올바른 형태</h4>
+<textarea>Textarea 태그
+Textarea 태그</textarea>
+</body>
+182 HTML5 문서 구조화
+Ⅰ
+공간 분할 태그
+192 HTML5 문서 구조화
+Ⅰ
+공간 분할 태그
+ 한 행을 모두 차지하며 끝 태그 이후 줄바꿈
+ 내용 만큼만 영역을 차지. 끝 태그 이후 줄바꿈 하지 않고 다음 내용이 출력
+202 HTML5 문서 구조화
+Ⅰ
+블록 형식 공간 분할
+space_block.html
+<body>
+<div>div 태그 - block 형식</div>
+<div>div 태그 - block 형식</div>
+<div>div 태그 - block 형식</div>
+<div>div 태그 - block 형식</div>
+<div>div 태그 - block 형식</div>
+</body>
+212 HTML5 문서 구조화
+Ⅰ
+인라인 형식 공간 분할
+space_inline.html
+<body>
+<span>span 태그 - inline 형식</span>
+<span>span 태그 - inline 형식</span>
+<span>span 태그 - inline 형식</span>
+<span>span 태그 - inline 형식</span>
+<span>span 태그 - inline 형식</span>
+</body>
+222 HTML5 문서 구조화
+Ⅰ
+시맨틱 태그
+23Ⅰ
+space_semanticLess.html
+242 HTML5 문서 구조화
+Ⅰ
+space_semanticLess.html
+<body> <div>
+<div> <div>
+<h1>HTML5 기본</h1> <h1>Lorem ipsum dolor sit amet</h1>
+</div> <p>Lorem ipsum dolor sit amet.</p>
+<div> </div>
+<ul> <div>
+<li><a href="#">메뉴 - 1</a></li> <h1>Lorem ipsum dolor sit amet</h1>
+<li><a href="#">메뉴 - 2</a></li> <p>Lorem ipsum dolor sit amet.</p>
+<li><a href="#">메뉴 - 3</a></li> </div>
+</ul> </div>
+</div> <div>
+<span>서울특별시 강서구 내발산동</span>
+</div>
+</body>
+252 HTML5 문서 구조화
+Ⅰ
+space_semantic.html
+<body> <section>
+<header> <article>
+<h1>HTML5 기본</h1> <h1>Lorem ipsum dolor sit amet</h1>
+</header> <p>Lorem ipsum dolor sit amet.</p>
+<nav> </article>
+<ul> <article>
+<li><a href="#">메뉴 - 1</a></li> <h1>Lorem ipsum dolor sit amet</h1>
+<li><a href="#">메뉴 - 2</a></li> <p>Lorem ipsum dolor sit amet.</p>
+<li><a href="#">메뉴 - 3</a></li> </article>
+</ul> </section>
+</nav> <footer>
+<span>서울특별시 강서구 내발산동</span>
+</footer>
+</body>
+26

@@ -1,0 +1,572 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 글자 속성
+Ⅰ
+글자 크기와 글꼴
+21 글자 속성
+Ⅰ
+글자 크기와 글꼴
+31 글자 속성
+Ⅰ
+font_size.html 글자 크기 조정하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+.a { font-size: 32px; }
+.b { font-size: 2em; }
+.c { font-size: large; }
+.d { font-size: small; }
+</style>
+</head>
+<body>
+<h1>Lorem ipsum</h1>
+<p class="a">Lorem ipsum</p>
+<p class="b">Lorem ipsum</p>
+<p class="c">Lorem ipsum</p>
+<p class="d">Lorem ipsum</p>
+</body>
+</html>
+41 글자 속성
+Ⅰ
+font_family.html 글꼴 1개 지정하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+.font_arial { font-family: Arial; }
+.font_roman { font-family: 'Times New Roman'; }
+</style>
+</head>
+<body>
+<h1 class="font_arial">Lorem ipsum</h1>
+<p class="font_roman">Lorem ipsum</p>
+</body>
+</html>
+51 글자 속성
+Ⅰ
+font_familyEach.html 글꼴 여러개 지정하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+.font_arial { font-family: '없는 글꼴', Arial; }
+.font_roman { font-family: 'Times New Roman', Arial; }
+</style>
+</head>
+<body>
+<h1 class="font_arial">Lorem ipsum</h1>
+<p class="font_roman">Lorem ipsum</p>
+</body>
+</html>
+61 글자 속성
+Ⅰ
+글자의 스타일과 굵기
+71 글자 속성
+Ⅰ
+font_styleWeight.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+.font_big { font-size: 2em; }
+.font_italic { font-style: italic; }
+.font_bold { font-weight: bold; }
+</style>
+</head>
+<body>
+<p class="font_big font_italic font_bold">Lorem ipsum dolor amet</p>
+</body>
+</html>
+81 글자 속성
+Ⅰ
+글자 정렬
+91 글자 속성
+Ⅰ
+font_textAlign.html 글자 정렬 지정
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+.font_big { font-size: 2em; }
+.font_italic { font-style: italic; }
+.font_bold { font-weight: bold; }
+.font_center { text-align: center; }
+.font_right { text-align: right; }
+</style>
+</head>
+<body>
+<p class="font_big font_italic font_bold font_center">Lorem ipsum dolor amet</p>
+<p class="font_bold font_right">2023.07.30</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+</body>
+</html>
+101 글자 속성
+Ⅰ
+링크 글자의 밑줄
+111 글자 속성
+Ⅰ
+font_textDecoration.html 링크의 밑줄 제거
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Font Property</title>
+<style>
+a { text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>
+<a href="#">Lorem ipsum dolor amet</a>
+</h1>
+</body>
+</html>
+122 위치 속성
+Ⅰ
+요소의 고정 위치와 상대 위치 지정
+ 브라우저 화면(viewport) 상에서 어디든지 원하는 위치에 자유롭게 배치
+ 단, 상위 요소 중에 position 속성이 relative인 요소가 있다면,
+⁃ 그 중 가장 가까운 요소의 내부에서만 요소를 자유롭게 배치
+⁃ 전체 화면이 아닌 해당 상위 요소를 기준으로 offset 속성(top, left, bottom, right)이 적용
+132 위치 속성
+Ⅰ
+요소의 고정 위치와 상대 위치 지정
+142 위치 속성
+Ⅰ
+position_absolute.html absolute 키워드 적용
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Position Property</title>
+<style>
+.box {
+width: 100px; height: 100px;
+position: absolute;
+}
+.box:nth-child(1) { background-color: red; }
+.box:nth-child(2) { background-color: green; }
+.box:nth-child(3) { background-color: blue; }
+</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</body>
+</html>
+152 위치 속성
+Ⅰ
+position_absoluteLeftTop.html left, top 속성 적용
+…
+<style>
+.box {
+width: 100px;
+height: 100px;
+position: absolute;
+}
+.box:nth-child(1) {
+background-color: red;
+left: 10px; top: 10px;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px; top: 50px;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px; top: 90px;
+}
+</style>
+…
+162 위치 속성
+Ⅰ
+요소의 고정 위치와 상대 위치 지정
+ 큰 값일 수록 앞에 배치
+172 위치 속성
+Ⅰ
+position_zIndex.html z-index 속성 적용
+<style>
+.box {
+width: 100px; height: 100px;
+position: absolute;
+}
+.box:nth-child(1) {
+background-color: red;
+left: 10px; top: 10px;
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px; top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px; top: 90px;
+z-index: 1;
+}
+</style>
+182 위치 속성
+Ⅰ
+absolute 사용법
+192 위치 속성
+Ⅰ
+position_formularBasic.html
+<style> <body>
+.box { <h1>Lorem ipsum dolor amet</h1>
+width: 100px; <div>
+height: 100px; <div class="box"></div>
+position: absolute; <div class="box"></div>
+} <div class="box"></div>
+.box:nth-child(1) { </div>
+background-color: red; <h1>Lorem ipsum dolor amet</h1>
+left: 10px; </body>
+top: 10px; </html>
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px;
+top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px;
+top: 90px;
+z-index: 1;
+}
+</style>
+</head>
+202 위치 속성
+Ⅰ
+absolute 사용법
+ 부모 요소에 height 속성 자정
+212 위치 속성
+Ⅰ
+position_formularHeight.html
+<style> body > div {
+.box { width: 400px;
+width: 100px; height: 100px;
+height: 100px; border: 3px solid black;
+position: absolute; }
+} </style>
+.box:nth-child(1) {
+background-color: red;
+left: 10px;
+top: 10px;
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px;
+top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px;
+top: 90px;
+z-index: 1;
+}
+222 위치 속성
+Ⅰ
+absolute 사용법
+ 부모 요소에 height 속성 자정
+ 자손의 position 속성에 absolute 키워드를 적용하려면 부모의 position 속성에 relative 키워드를 적용
+232 위치 속성
+Ⅰ
+position_formularHeight.html relative 키워드 적용
+<style> body > div {
+.box { width: 400px;
+width: 100px; height: 100px;
+height: 100px; border: 3px solid black;
+position: absolute; position: relative
+} }
+.box:nth-child(1) { </style>
+background-color: red;
+left: 10px;
+top: 10px;
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px;
+top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px;
+top: 90px;
+z-index: 1;
+}
+242 위치 속성
+Ⅰ
+absolute 사용법
+ 부모 요소에 height 속성 자정
+ 자손의 position 속성에 absolute 키워드를 적용하려면 부모의 position 속성에 relative 키워드를 적용
+ 부모 영역을 벗어나는 경우 처리 → overflow 속성 지정
+ overflow-x, overflow-y
+⁃ x, y 각각의 축 방향으로 스크롤 여부 지정 가능
+252 위치 속성
+Ⅰ
+position_formularHeightHidden.html hidden 키워드 적용
+<style> body > div {
+.box { width: 400px;
+width: 100px; height: 100px;
+height: 100px; border: 3px solid black;
+position: absolute; position: relative;
+} overflow: hidden;
+.box:nth-child(1) { }
+background-color: red; </style>
+left: 10px;
+top: 10px;
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px;
+top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px;
+top: 90px;
+z-index: 1;
+}
+262 위치 속성
+Ⅰ
+position_formularScrollt.html scroll 키워드 적용
+<style> body > div {
+.box { width: 400px;
+width: 100px; height: 100px;
+height: 100px; border: 3px solid black;
+position: absolute; position: relative;
+} overflow: scroll;
+.box:nth-child(1) { }
+background-color: red; </style>
+left: 10px;
+top: 10px;
+z-index: 100;
+}
+.box:nth-child(2) {
+background-color: green;
+left: 50px;
+top: 50px;
+z-index: 10;
+}
+.box:nth-child(3) {
+background-color: blue;
+left: 90px;
+top: 90px;
+z-index: 1;
+}
+273 유동 속성
+Ⅰ
+float 속성
+283 유동 속성
+Ⅰ
+float_basic.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Float Property</title>
+<style>
+</style>
+</head>
+<body>
+<img src="hanbit.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac urna vitae dolor pulvinar facilisis eget ac
+risus. Phasellus gravida non augue vitae rutrum. Ut vitae ligula lorem. Suspendisse gravida egestas faucibus. Donec
+et tincidunt justo. Pellentesque in est a massa ornare facilisis. Aenean placerat neque euismod, hendrerit sem vitae,
+faucibus nibh. Praesent nec ullamcorper quam, laoreet feugiat nibh. Curabitur id placerat odio. Cras euismod ante
+augue, id feugiat dui gravida non. Integer vitae orci congue, fermentum lacus eget, mollis nisl. Integer vel porttitor
+magna, vitae consequat neque. Nam nec libero in turpis elementum bibendum id vel erat. In id tincidunt velit,
+convallis consectetur leo. Etiam volutpat eget mauris efficitur fermentum. Ut eu volutpat tellus.</p>
+<p>Proin ut quam feugiat, ...</p>
+</body>
+</html>
+293 유동 속성
+Ⅰ
+float_image.html float 속성 적용
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Float Property</title>
+<style>
+img {
+float: left;
+}
+</style>
+</head>
+<body>
+<img src="hanbit.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac urna vitae dolor pulvinar facilisis eget ac
+risus. Phasellus gravida non augue vitae rutrum. Ut vitae ligula lorem. Suspendisse gravida egestas faucibus. Donec
+et tincidunt justo. Pellentesque in est a massa ornare facilisis. Aenean placerat neque euismod, hendrerit sem vitae,
+faucibus nibh. Praesent nec ullamcorper quam, laoreet feugiat nibh. Curabitur id placerat odio. Cras euismod ante
+augue, ...</p>
+<p>Proin ut quam feugiat, ...</p>
+</body>
+</html>
+303 유동 속성
+Ⅰ
+float_boxBasic.html float 속성을 적용할 대상 만들기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Float Property</title>
+<style>
+.box {
+width: 100px;
+height: 100px;
+background-color: red;
+margin: 10px;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="box">2</div>
+</body>
+</html>
+313 유동 속성
+Ⅰ
+float_boxLeft.html left 키워드 적용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Float Property</title>
+<style>
+.box {
+width: 100px; height: 100px;
+background-color: red;
+margin: 10px; padding: 10px;
+/* 태그를 왼쪽으로 붙입니다. */
+float: left;
+}
+</style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="box">2</div>
+</body>
+</html>
+323 유동 속성
+Ⅰ
+float_boxRight.html right 키워드 적용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Float Property</title>
+<style>
+.box {
+width: 100px; height: 100px;
+background-color: red;
+margin: 10px; padding: 10px;
+/* 태그를 오른쪽으로 붙입니다. */
+float: right;
+}
+</style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="box">2</div>
+</body>
+</html>
+334 그림자와 그레이디언트 속성
+Ⅰ
+그림자 속성
+344 그림자와 그레이디언트 속성
+Ⅰ
+shadow_textShadow.html 글자에 그림자 만들기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Shadow Property</title>
+<style>
+h1 {
+text-shadow: 5px 5px 5px black;
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor amet</h1>
+</body>
+</html>
+354 그림자와 그레이디언트 속성
+Ⅰ
+shadow_duplication.html 중첩 그림자 만들기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Shadow Property</title>
+<style>
+.box {
+border: 3px solid black;
+box-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+text-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Lorem ipsum dolor amet</h1>
+</div>
+</body>
+</html>
+364 그림자와 그레이디언트 속성
+Ⅰ
+그레이디언트 속성
+374 그림자와 그레이디언트 속성
+Ⅰ
+그레이디언트 속성
+ 색상 블록의 왼쪽에는 색상 단위, 오른쪽에는 퍼센트 단위를 입력해 그레이디언트 색상과 위치를 지정.
+384 그림자와 그레이디언트 속성
+Ⅰ
+그레이디언트 생성기 사용하기
+생성된 CSS 코드를
+복사
+394 그림자와 그레이디언트 속성
+Ⅰ
+gradient_basic.html
+<style>
+div {
+font-family: 'Times New Roman';
+height: 60px;
+line-height: 60px;
+text-align: center;
+/* Old browsers */
+background: #f85032;
+/* FF3.6-15 */
+background: -moz-linear-gradient(top, #f85032 0%, #f16f5c 50%, #f6290c 51%,
+#f02f17 71%, #e73827 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(top, #f85032 0%, #f16f5c 50%, #f6290c 51%,
+#f02f17 71%, #e73827 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom, #f85032 0%, #f16f5c 50%, #f6290c 51%,
+#f02f17 71%, #e73827 100%);
+/* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032',
+endColorstr='#e73827', GradientType=0 );
+}
+</style>
+</head>
+404 그림자와 그레이디언트 속성
+Ⅰ
+gradient_basic.html
+<body>
+<div>
+<h1>CSS3 그레이디언트</h1>
+</div>
+</body>
+</html>
+41

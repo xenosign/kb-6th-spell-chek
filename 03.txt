@@ -1,0 +1,334 @@
+2025년 상반기 K-디지털 트레이닝
+HTML5 기본 태그
+[KB] IT’s Your Life글자 태그
+1
+Ⅰ
+• 제목과 본문 글자 태그
+○ h는 heading(제목), p는 paragraph(단락), br은 break(줄 바꿈), hr은 horizontal rule(수평 줄)을 의미
+2글자 태그
+1
+Ⅰ
+•
+text_header.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML TEXT Basic Page</title>
+</head>
+<body>
+<h1>제목 글자 태그 1</h1>
+<h2>제목 글자 태그 2</h2>
+<h3>제목 글자 태그 3</h3>
+<h4>제목 글자 태그 4</h4>
+<h5>제목 글자 태그 5</h5>
+<h6>제목 글자 태그 6</h6>
+</body>
+</html>
+3글자 태그
+1
+Ⅰ
+•
+text_paragraph.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML TEXT Basic Page</title>
+</head>
+<body>
+<h1>제목 글자</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Phasellus sem tortor, volutpat vitae euismod eget</p>
+</body>
+</html>
+4글자 태그
+1
+Ⅰ
+•
+text_content.html
+···
+<body>
+<h1>홍차</h1>
+<hr>
+<h2>정의</h2>
+<p> 홍차는 백차, 녹차, 우롱차보다 더 많이 발효된 차의 일종이다. 동양에서는 찻물의 빛이 붉기 때문에 홍차라고 부
+르지만, 서양에서는 찻잎의 색깔 때문에 'black tea'라고 부른다.</p>
+<br>
+<h2>등급</h2>
+<p> 홍차는 여러 가지로 등급이 매겨진다. 일반적으로 찻잎의 모양에 따른 등급과 가공 상태에 따른 등급을 조합하여
+표시한다.</p>
+<p>- 브로큰 페코</p>
+<p>- 브로큰 페코 수숑</p>
+<p>- 브로큰 오렌지 페코 패닝</p>
+</body>
+</html>
+5글자 태그
+1
+Ⅰ
+• 앵커 태그
+○ 하이퍼텍스트 : 사용자 선택에 따라 관련한 특정 정보로 이동할 수 있도록 조직된 문서
+○ a 태그는 anchor를 의미, 다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동할 때 사용
+○ href 속성은 hyper reference를 의미, 웹 페이지나 파일의 위치를 나타내는 경로를 입력해 웹 브라우
+저에 알려 줌
+6글자 태그
+1
+Ⅰ
+•
+text_anchor.html
+···
+<body>
+<a href="https://www.google.com">Google</a>
+<a href="https://www.daum.net">Daum</a>
+<a href="https://www.naver.com">Naver</a>
+<hr />
+7글자 태그
+1
+Ⅰ
+•
+text_anchor.html
+<a href="#alpha">Alpha 부분</a>
+<a href="#beta">Beta 부분</a>
+<a href="#gamma">Gamma 부분</a>
+<hr>
+<h1 id="alpha">Alpha</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+...
+<h1 id="beta">Beta</h1>
+<p>Donec at pharetra orci. Ut tincidunt porta aliquam.</p>
+...
+<h1 id="gamma">Gamma</h1>
+<p>Integer nibh tellus, tristique quis blandit quis, consequat</p>
+...
+</body>
+</html>
+8글자 태그
+1
+Ⅰ
+• 앵커 태그
+○ id 속성이 중복되면 먼저 나오는 태그로 이동하나, id 속성 중복 사용은 웹 표준에 어긋남
+○ NOTE: 빈 링크
+▪ a 태그의 하이퍼링크 기능을 제거하더라도 a 태그에 href 속성에 ‘#’을 입력해서 웹 표준을 따르는 것이 좋음
+<div class="directory_box _list_area">
+<a class="directory_list _qna_list">
+<li><a href="#">전체</a></li>
+<li><a href="#">교육, 학문</a></li>
+<li><a href="#">컴퓨터통신</a></li>
+<li><a href="#">엔터테인먼트, 예술</a></li>
+<li><a href="#">생활</a></li>
+<li><a href="#">건강</a></li>
+</ul>
+</div>
+9글자 태그
+1
+Ⅰ
+• 글자 모양 태그
+○ 단독으로 사용하거나 제목 글자와 본문 글자 태그 내부 또는 다른 글자 모양 태그 내부에도 넣을 수
+있음
+▪ 글자 모양 태그 내부에 제목 글자와 본문 글자 태그는 넣을 수 없음
+10글자 태그
+1
+Ⅰ
+•
+text_font.html
+···
+<body>
+<h1><b>Lorem ipsum dolor sit amet</b></h1>
+<h1><i>Lorem ipsum dolor sit amet</i></h1>
+<h1><small>Lorem ipsum dolor sit amet</small></h1>
+<h1>Lorem ipsum dolor<sub>sit amet</sub></h1>
+<h1>Lorem ipsum dolor<sup>sit amet</sup></h1>
+<h1><ins>Lorem ipsum dolor sit amet</ins></h1>
+<h1><del>Lorem ipsum dolor sit amet</del></h1>
+<hr>
+<b>Lorem ipsum dolor sit amet</b><br>
+<i>Lorem ipsum dolor sit amet</i><br>
+<small>Lorem ipsum dolor sit amet</small><br>
+Lorem ipsum dolor<sub>sit amet</sub><br>
+Lorem ipsum dolor<sup>sit amet</sup><br>
+<ins>Lorem ipsum dolor sit amet</ins><br>
+<del>Lorem ipsum dolor sit amet</del><br>
+</body>
+11목록 태그
+2
+Ⅰ
+• 내비게이션 메뉴
+○ 웹 사이트의 다른 웹 페이지로 이동할 수 있는 버튼을 모아 둔 것. 목록 태그를 사용하여 만듦
+12목록 태그
+2
+Ⅰ
+•
+list_ordered.html - 순서가 없는 기본 목록 만들기
+<body>
+<ul>
+<li>사과</li>
+<li>바나나</li>
+<li>오렌지</li>
+</ul>
+</body>
+•
+list_unordered.html - 순서가 있는 기본 목록 만들기 ul 태그를 ol 태그로 바꿈
+<body>
+<ol>
+<li>사과</li>
+<li>바나나</li>
+<li>오렌지</li>
+</ol>
+</body>
+13목록 태그
+2
+Ⅰ
+•
+list_nested.html - 중첩 목록 만들기
+<body>
+<ul>
+<!-- 첫 번째 목록 -->
+<li>
+<b>과일</b>
+<ol>
+<li>사과</li>
+<li>바나나</li>
+<li>오렌지</li>
+</ol>
+</li>
+<!-- 두 번째 목록 -->
+<li>
+<b>채소</b>
+<ol>
+<li>상추</li>
+<li>치커리</li>
+<li>양배추</li>
+</ol>
+</li>
+</ul>
+</body> 14테이블 태그
+3
+Ⅰ
+• 표만들기
+15테이블 태그
+3
+Ⅰ
+•
+table_cell.html
+<body>
+<table border="1">
+<thead>
+<tr>
+<th></th>
+<th>월</th>
+<th>화</th>
+<th>수</th>
+<th>목</th>
+<th>금</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1교시</td>
+<td>영어</td>
+<td>국어</td>
+<td>과학</td>
+<td>미술</td>
+<td>기술</td>
+</tr>
+<tr> 16
+<td>2교시</td>테이블 태그
+3
+Ⅰ
+• 테이블 태그의 속성
+17테이블 태그
+3
+Ⅰ
+•
+table_span.html
+<body>
+<table border="1">
+<tr>
+<th colspan="2">지역별 홍차</th>
+</tr>
+<tr>
+<th rowspan="3">중국</th>
+<td>정산소종</td>
+</tr>
+<tr><td>기문</td></tr>
+<tr><td>운남</td></tr>
+<tr>
+<th rowspan="4">인도 및 스리랑카</th>
+<td>아삼</td>
+</tr>
+<tr><td>실론</td></tr>
+<tr><td>다질링</td></tr>
+<tr><td>닐기리</td></tr>
+</table>
+</body>
+18미디어 태그
+4
+Ⅰ
+• img 태그는 내용을 가질 수 없는 태그이지만,
+audio 태그와 video 태그는 내용을 가질 수 있는 태그
+19미디어 태그
+4
+Ⅰ
+•
+image_basic.html
+<body>
+<img src="Penguins.jpg" alt="펭귄" width="300">
+<img src="Nothing" alt="그림이 존재하지 않습니다."width="300">
+</body>
+웹에 있는 이미지 경로를 넣어도 됨
+<img src="http://www.hanbit.co.kr/
+images/common/logo_hanbit.png">
+이미지가 없으면
+alt 속성에 지정한 글자가 표시됨
+20미디어 태그
+4
+Ⅰ
+•
+audio_basic.html
+<body>
+<audio src="Kalimba.mp3" controls="controls"></audio>
+</body>
+○ 웹 브라우저마다 서로 다른 모습으로 나타남
+엣지, 크롬, 오페라
+파이어폭스
+사파리
+21미디어 태그
+4
+Ⅰ
+•
+audio_source.html
+<body>
+<audio controls="controls">
+<source src="Kalimba.mp3" type="audio/mp3">
+<source src="Kalimba.ogg" type="audio/ogg">
+</audio>
+</body>
+○ 웹 브라우저 마다 지원하는 미디어 포맷이 다름
+▪ audio, video 태그 내부에 포맷별 source 태그를 입력해 해결
+22미디어 태그
+4
+Ⅰ
+•
+video_basic.html
+<body>
+<video controls="controls">
+<source src="Wildlife.mp4" type="video/mp3">
+<source src="Wildlife.webm" type="video/webm">
+</video>
+</body>
+23미디어 태그
+4
+Ⅰ
+• 동영상을 불러오는 동안 다른 이미지 보여 주기
+○ 동영상 파일 크기가 큰 경우 다운로드하는 동안 이미지 파일을 출력할 수 있음
+○ video 태그의 poster 속성을 사용해 동영상을 불러오는 동안 사용자에게 보여 줄 이미지를 지정
+24미디어 태그
+4
+Ⅰ
+•
+video_poster.html
+<body>
+<video controls="controls" poster="http://via.placeholder.com/1280x720">
+<source src="Wildlife.mp4" type="video/mp4">
+<source src="Wildlife.webm" type="video/webm">
+</video>
+</body>
+25

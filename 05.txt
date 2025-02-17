@@ -1,0 +1,537 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 선택자의 용도와 사용법
+Ⅰ
+스타일시트: CSS로 작성된 코드
+21 선택자의 용도와 사용법
+Ⅰ
+selector_basic.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+h1 { CSS 블록
+color: red;
+background-color: orange;
+}
+</style>
+</head>
+<body>
+<h1>CSS3 선택자 기본</h1>
+</body>
+</html>
+31 선택자의 용도와 사용법
+Ⅰ
+CSS3 선택자 종류
+41 선택자의 용도와 사용법
+Ⅰ
+CSS3 선택자 종류
+51 선택자의 용도와 사용법
+Ⅰ
+CSS3 선택자 종류
+62 기본 선택자
+Ⅰ
+기본 선택자
+72 기본 선택자
+Ⅰ
+selector_wildcard.html(전체 선택자 사용하기)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+* { color: red; }
+</style>
+</head>
+<body>
+<h1>제목 글자</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>
+82 기본 선택자
+Ⅰ
+selector_tag.html(태그 선택자)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+h1 { color: red; }
+p { color: blue; }
+</style>
+</head>
+<body>
+<h1>제목 글자</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Nunc nisl turpis, aliquet et gravida non, facilisis a sem.</p>
+</body>
+</html>
+92 기본 선택자
+Ⅰ
+태그 선택자 사용하기
+ 태그 선택자를 쉼표로 연결해 margin 스타일 속성과 padding 스타일 속성을 적용한 것.
+102 기본 선택자
+Ⅰ
+selector_id.html (id 선택자)
+<head> </head>
+<title>CSS3 Selector Basic</title> <body>
+<style> <div id="header">
+#header { <h1>#header 태그</h1>
+width: 800px; margin: 0 auto; </div>
+background: red; <div id="wrap">
+} <div id="aside">
+#wrap { <h1>#aside 태그</h1>
+width: 800px; margin: 0 auto; </div>
+overflow: hidden; <div id="content">
+} <h1>#content 태그</h1>
+#aside { </div>
+width: 200px; float: left; </div>
+background: blue; </body>
+} </html>
+#content {
+width: 600px; float: left;
+background: green;
+}
+</style>
+112 기본 선택자
+Ⅰ
+id의 중복 사용
+122 기본 선택자
+Ⅰ
+id_duplication.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+#rint { color: red; }
+</style>
+</head>
+<body>
+<h1 id="rint">CSS3 선택자 기본</h1>
+<h2 id="rint">CSS3 선택자 기본</h2>
+<h3 id="rint">CSS3 선택자 기본</h3>
+</body>
+</html>
+132 기본 선택자
+Ⅰ
+selector_class.html (클래스 선택자 1개 사용하기)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+.select { color: red; }
+</style>
+</head>
+<body>
+<ul>
+<li class="select">사과</li>
+<li>바나나</li>
+<li class="select">오렌지</li>
+<li>감</li>
+</ul>
+</body>
+</html>
+142 기본 선택자
+Ⅰ
+selector_multiClass.html (클래스 선택자 여러 개 사용하기)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+.item { color: red; }
+.header { background-color: blue; }
+</style>
+</head>
+두 가지 속성이 적용되어 파란색 배경에
+빨간색 글자로 나타납니다.
+<body>
+<h1 class="item header">동해물과 백두산이</h1>
+</body>
+</html>
+152 기본 선택자
+Ⅰ
+note_tagWithClass.html (태그 선택자와 클래스 선택자 함께 지정하기)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+정확하게 태그를 선택해 사과만
+li.select { color: red; }
+빨간색으로 표시합니다.
+</style>
+</head>
+<body>
+<h1 class="select">제목 글자</h1>
+<ul>
+<li class="select">사과</li>
+<li>바나나</li>
+<li>오렌지</li>
+<li>감</li>
+</ul>
+</body>
+</html>
+163 속성 선택자
+Ⅰ
+속성 선택자
+173 속성 선택자
+Ⅰ
+attribute_basic.html 속성 선택자로 input 태그 선택
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+input[type="text"] { background: red; }
+input[type="password"] { background: blue; }
+</style>
+</head>
+<body>
+<form>
+<input type="text">
+<input type="password">
+</form>
+</body>
+</html>
+183 후손 선택자와 자손 선택자
+Ⅰ
+후손 선택자와 자손 선택자
+<body>
+<div>
+<h1>CSS3 선택자 기본</h1>
+<h2>기본 선택자</h2>
+<ul>
+<li>전체 선택자</li>
+<li>태그 선택자</li>
+<li>아이디 선택자와 클래스 선택자</li>
+</ul>
+</div>
+</body>
+193 후손 선택자와 자손 선택자
+Ⅰ
+후손 선택자
+203 후손 선택자와 자손 선택자
+Ⅰ
+desc_descendants.html 후손 선택자
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+#header h1 { color: red; }
+#section h1 { color: orange; }
+</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Lorem ipsum</h1>
+<div id="nav">
+<h1>Navigation</h1>
+</div>
+</div>
+<div id="section">
+<h1 class="title">Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</body>
+</html>
+213 후손 선택자와 자손 선택자
+Ⅰ
+후손 선택자
+223 후손 선택자와 자손 선택자
+Ⅰ
+자손 선택자
+233 후손 선택자와 자손 선택자
+Ⅰ
+desc_children.html 자손 선택자
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+#header > h1 { color: red; }
+#section > h1 { color: orange; }
+</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Lorem ipsum</h1>
+<div id="nav">
+<h1>Navigation</h1>
+</div>
+</div>
+<div id="section">
+<h1 class="title">Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</body>
+</html> 243 후손 선택자와 자손 선택자
+Ⅰ
+desc_tableWithChildren.html <tbody> 생략시, 자동 추가됨
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+table > tr > th {
+color: red;
+}
+</style>
+</head>
+<body>
+<table border="1">
+<tr>
+<th>이름</th>
+<th>지역</th>
+</tr>
+<tr>
+<td>윤인성</td>
+<td>서울특별시 강서구 내발산동</td>
+</tr>
+</table>
+</body>
+</html>
+254 반응·상태·구조 선택자
+Ⅰ
+반응 선택자
+ hover: 사용자가 특정 태그 위에 마우스 커서를 올린 상태
+ active: 특정 태그를 마우스로 클릭한 상태.
+264 반응·상태·구조 선택자
+Ⅰ
+etc_action.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+h1:hover { color: red; }
+h1:active { color: blue; }
+</style>
+</head>
+<body>
+<h1>반응 선택자</h1>
+</body>
+</html>
+274 반응·상태·구조 선택자
+Ⅰ
+상태 선택자
+284 반응·상태·구조 선택자
+Ⅰ
+입력 양식의 상태
+294 반응·상태·구조 선택자
+Ⅰ
+etc_state.html
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+/* input 태그가 사용 가능할 때
+background-color 속성에 white 키워드를 적용합니다. */
+input:enabled { background-color: white; }
+/* input 태그가 사용 불가능할 때
+background-color 속성에 gray 키워드를 적용합니다. */
+input:disabled { background-color: gray; }
+/* input 태그에 포커스를 맞출 때
+background-color 속성에 orange 키워드를 적용합니다. */
+input:focus { background-color: orange; }
+</style>
+</head>
+<body>
+<h2>사용 가능</h2>
+<input>
+<h2>사용 불가능</h2>
+<input disabled="disabled">
+</body>
+304 반응·상태·구조 선택자
+Ⅰ
+구조 선택자
+314 반응·상태·구조 선택자
+Ⅰ
+etc_structure.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+ul { overflow: hidden; }
+li {
+list-style: none;
+float: left; padding: 15px;
+}
+li:first-child { border-radius: 10px 0 0 10px; }
+li:last-child { border-radius: 0 10px 10px 0; }
+li:nth-child(2n) { background-color: #FF0003; }
+li:nth-child(2n+1) { background-color: #800000; }
+</style>
+</head>
+324 반응·상태·구조 선택자
+Ⅰ
+etc_structure.html
+<body>
+<ul>
+<li>첫 번째</li>
+<li>두 번째</li>
+<li>세 번째</li>
+<li>네 번째</li>
+<li>다섯 번째</li>
+<li>여섯 번째</li>
+<li>일곱 번째</li>
+</ul>
+</body>
+</html>
+334 반응·상태·구조 선택자
+Ⅰ
+etc_structureFalse.html 첫번째 a 태그에만 빨간색 적용하기(잘못된 예)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+li > a:first-child { color: red; }
+</style>
+</head>
+<body>
+<ul>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+</ul>
+</body>
+</html>
+344 반응·상태·구조 선택자
+Ⅰ
+etc_structureTrue.html 첫번째 a 태그에만 빨간색 적용하기(올바른 예)
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Selector Basic</title>
+<style>
+li:first-child > a { color: red; }
+</style>
+</head>
+<body>
+<ul>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+<li><a href="#">주의 사항</a></li>
+</ul>
+</body>
+</html>
+355 CSS3 단위
+Ⅰ
+키워드 단위
+365 CSS3 단위
+Ⅰ
+크기 단위
+ %, em, cm, mm, inch, px.
+375 CSS3 단위
+Ⅰ
+CSS3Unit_basic.html 다양한 크기의 단위 적용
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Units</title>
+<style>
+</style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>
+385 CSS3 단위
+Ⅰ
+CSS3Unit_percent.html % 단위 적용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Units</title>
+<style>
+p:nth-child(1) { }
+p:nth-child(2) { font-size: 100%; }
+p:nth-child(3) { font-size: 150%; }
+p:nth-child(4) { font-size: 200%; }
+</style>
+</head>
+<body>
+…
+395 CSS3 단위
+Ⅰ
+CSS3Unit_em.html em 단위 적용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Units</title>
+<style>
+p:nth-child(1) { }
+p:nth-child(2) { font-size: 1.0em; }
+p:nth-child(3) { font-size: 1.5em; }
+p:nth-child(4) { font-size: 2.0em; }
+</style>
+</head>
+<body>
+…
+405 CSS3 단위
+Ⅰ
+CSS3Unit_px.html px 단위로 절대값 지정하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Units</title>
+<style>
+p:nth-child(1) { }
+p:nth-child(2) { font-size: 16px; }
+p:nth-child(3) { font-size: 24px; }
+p:nth-child(4) { font-size: 32px; }
+</style>
+</head>
+<body>
+…
+415 CSS3 단위
+Ⅰ
+색상 단위
+<style>
+h1 { background-color: red; }
+h2 { background-color: orange; }
+h3 { background-color: blue; }
+</style>
+425 CSS3 단위
+Ⅰ
+색상 단위
+435 CSS3 단위
+Ⅰ
+URL
+url(이미지 경로)
+/* 현재 폴더의 Desert.jpg */
+background-image: url('Desert.jpg’);
+/* Other 폴더의 Desert.jpg */
+background-image: url('Other/Desert.jpg’);
+/* 루트 폴더의 Desert.jpg */
+background-image: url('/Desert.jpg');
+445 CSS3 단위
+Ⅰ
+CSS3Unit_url.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Units</title>
+<style>
+body {
+background-image: url('Desert.jpg');
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>
+45

@@ -1,0 +1,297 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+수평 정렬 레이아웃
+21 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+floatWithoutOverflow.html
+<style>
+div.container {
+}
+div.item {
+float: left;
+margin: 0 3px;
+padding: 10px;
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ....</p>
+<div class="container">
+<div class="item">메뉴 - 1</div>
+<div class="item">메뉴 - 2</div>
+<div class="item">메뉴 - 3</div>
+<div class="item">메뉴 - 4</div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+</body> 31 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+floatWithOverflow.html
+<style>
+div.container {
+overflow: hidden;
+}
+div.item {
+float: left;
+margin: 0 3px;
+padding: 10px;
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ....</p>
+<div class="container">
+<div class="item">메뉴 - 1</div>
+<div class="item">메뉴 - 2</div>
+<div class="item">메뉴 - 3</div>
+<div class="item">메뉴 - 4</div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+</body> 41 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+수평 정렬 레이아웃
+ float 속성 적용 제거
+⁃ left
+⁃ right
+⁃ both <body> <style>
+<p>Lorem ipsum dolor sit amet.</p> div.item {
+<div class="clear"></div> float: left;
+<div> margin: 0 3px;
+<div class="item">메뉴 - 1</div> padding: 10px;
+<div class="item">메뉴 - 2</div> border: 1px solid black;
+<div class="item">메뉴 - 3</div> }
+<div class="item">메뉴 - 4</div>
+</div> div.clear {
+<div class="clear"></div> clear: both;
+<p>Lorem ipsum dolor sit amet.</p> }
+<body> </style>
+수평 정렬하고 싶은 대상 아래에
+div 태그를 배치 clear 속성을 지정
+51 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+중앙 정렬 레이아웃
+61 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+marginWidth.html
+<title>Layout</title>
+<style>
+/* 초기화 */
+* { margin: 0; padding: 0; }
+/* 주제 */
+body {
+margin: 0 auto;
+width: 960px;
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum</h1>
+<h2>Neque porro quisquam est qui...</h2>
+<p>Lorem ipsum dolor sit amet, ...</p>
+<p>Proin ut quam feugiat, tincidunt dolor nec, ...</p>
+</body>
+</html>
+71 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+One True 레이아웃
+81 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+One True 레이아웃
+ 행 3개로 구분되므로 공간을 3개로 분할
+<body>
+<div id="top"></div>
+<div id="middle"></div>
+<div id="bottom"></div>
+</body>
+<body>
+<div id="top"></div>
+<div id="middle">
+<div id="left"></div>
+<div id="right”></div>
+</div>
+<div id="bottom"></div>
+</body>
+91 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+One True 레이아웃
+ 부모 태그에 고정된 너비를 지정.
+ 수평 정렬하는 부모 태그의 overf low 속성에 hidden을 적용.
+ 자손 태그에 적당한 너비를 입력하고 float 속성을 적용.
+101 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+oneTrueLayout.html
+<style>
+body {
+width: 500px;
+margin: 10px auto;
+}
+#middle { overflow: hidden; }
+#left { float: left; width: 150px; background: red;}
+#right { float: right; width: 350px; background: blue; }
+#top { background: green; }
+#bottom { background: purple; }
+</style>
+</head>
+<body>
+<div id="top">Lorem ipsum dolor sit amet, ...</div>
+<div id="middle">
+<div id="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div id="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</div>
+</div>
+<div id="bottom">Lorem ipsum dolor sit amet, ...</div>
+</body>
+111 수평, 중앙, One True 정렬 레이아웃
+Ⅰ
+note_flex.html Flex 레이아웃
+<head>
+<title>Layout</title>
+<style>
+body {
+width: 500px;
+margin: 10px auto;
+}
+#middle { display: flex; }
+#left { width: 150px; background: red; }
+#right { width: 350px; background: blue; }
+#top { background: green; }
+#bottom { background: purple; }
+</style>
+</head>
+122 요소 배치
+Ⅰ
+절대 위치를 사용한 요소 배치
+132 요소 배치
+Ⅰ
+absolutePosition.html
+<!DOCTYPE html>
+<html> #green {
+<head> background: green;
+<title>Absolute Position</title> right: 20px; top: 20px;
+<style> }
+#container {
+width: 500px; height: 300px; #blue {
+border: 3px solid black; background: blue;
+overflow: hidden; right: 20px; bottom: 20px;
+position: relative; }
+}
+#yellow {
+.circle { background: yellow;
+position: absolute; left: 20px; bottom: 20px;
+width: 100px; height: 100px; }
+border-radius: 50% 50%; </style>
+} </head>
+#red {
+background: red;
+left: 20px; top: 20px;
+} 142 요소 배치
+Ⅰ
+absolutePosition.html
+<body>
+<h1>Dummy Text</h1>
+<div id="container">
+<div id="red" class="circle"></div>
+<div id="green" class="circle"></div>
+<div id="blue" class="circle"></div>
+<div id="yellow" class="circle"></div>
+</div>
+<h1>Dummy Text</h1>
+</body>
+</html>
+152 요소 배치
+Ⅰ
+요소를 중앙에 배치
+162 요소 배치
+Ⅰ
+요소를 중앙에 배치
+172 요소 배치
+Ⅰ
+absolutePosition_align.html
+<head> <body>
+<title>Absolute Position</title> <div id="container">
+<style> <h1>요소의 중앙 배치</h1>
+/* 초기화 */ </div>
+* { margin: 0; padding: 0; } </body>
+/* 주제 */
+body { background: red; }
+#container {
+/* 색상 및 크기 적용 */
+width: 500px; height: 250px;
+background: orange;
+/* 위치 설정 */
+position: absolute;
+left: 50%; top: 50%;
+margin-left: -250px;
+margin-top: -125px;
+}
+</style>
+</head>
+182 요소 배치
+Ⅰ
+요소를 고정 위치에 배치
+192 요소 배치
+Ⅰ
+fixedBar.html
+<head>
+<title>Fixed Bar</title>
+<style>
+.container {
+margin-top: 50px;
+margin-left: 50px;
+}
+.top_bar {
+background: red;
+position: fixed;
+left: 0; top: 0; right: 0;
+height: 50px;
+}
+.left_bar {
+background: blue;
+position: fixed;
+left: 0; top: 50px; bottom: 0;
+width: 50px;
+}
+</style>
+</head>
+202 요소 배치
+Ⅰ
+fixedBar.html
+<body>
+<div class="top_bar"></div>
+<div class="left_bar"></div>
+<div class="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+<p>Proin ut quam feugiat, tincidunt dolor nec, iaculis dui. ….</p>
+<p>Fusce elementum pretium diam vitae facilisis. ….</p>
+<p>Mauris non lobortis lectus. V….</p>
+</div>
+</body>
+</html>
+213 글자 생략
+Ⅰ
+글자 생략
+223 글자 생략
+Ⅰ
+ellipsis.html 글자 생략
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ellipsis</title>
+<style>
+h1, p {
+width: 300px;
+}
+.ellipsis {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+<h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+<p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+</body>
+</html>
+23

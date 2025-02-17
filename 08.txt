@@ -1,0 +1,335 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 반응형 웹 소개
+Ⅰ
+반응형 웹
+미디어 쿼리(media query)를 사용해 개발
+22 반응형 웹을 위한 설정
+Ⅰ
+meta 태그
+32 반응형 웹을 위한 설정
+Ⅰ
+뷰포트 태그
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+42 반응형 웹을 위한 설정
+Ⅰ
+without_meta.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Viewport Meta</title>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc. Nulla cursus non urna eu elementum. Integer at mi auctor mi suscipit dapibus nec non orci. Sed at
+libero non augue ultricies euismod a non erat. Nunc ipsum nulla, scelerisque id enim nec, lobortis ornare leo.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras suscipit egestas felis, vitae bibendum mi
+ullamcorper at. Integer scelerisque cursus nunc, ultricies tincidunt ante tempus ut. Nam id convallis justo. Donec
+sagittis, magna at laoreet blandit, dolor lectus rutrum augue, in accumsan velit orci vitae elit. Vestibulum diam
+lectus, convallis porttitor velit eget, dignissim ullamcorper felis.</p>
+</body>
+</html>
+52 반응형 웹을 위한 설정
+Ⅰ
+with_meta.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Viewport Meta</title>
+<meta name="viewport" content="user-scalable=no,initial-scale=1">
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc. Nulla cursus non urna eu elementum. Integer at mi auctor mi suscipit dapibus nec non orci. Sed at
+libero non augue ultricies euismod a non erat. Nunc ipsum nulla, scelerisque id enim nec, lobortis ornare leo.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras suscipit egestas felis, vitae bibendum mi
+ullamcorper at. Integer scelerisque cursus nunc, ultricies tincidunt ante tempus ut. Nam id convallis justo. Donec
+sagittis, magna at laoreet blandit, dolor lectus rutrum augue, in accumsan velit orci vitae elit. Vestibulum diam
+lectus, convallis porttitor velit eget, dignissim ullamcorper felis.</p>
+</body>
+</html>
+62 반응형 웹을 위한 설정
+Ⅰ
+미디어 쿼리 설정
+@media (<미디어 쿼리>) {
+<CSS 코드>
+}
+<link rel="stylesheet" href="<파일 이름>" media="<미디어 쿼리>">
+72 반응형 웹을 위한 설정
+Ⅰ
+at_media_rule.html @ media 규칙을 사용한 미디어 쿼리 사용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Type</title>
+<style>
+@media screen {
+body { background-color: red; }
+}
+@media print {
+body { background-color: green; }
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc....</p>
+</body>
+</html>
+82 반응형 웹을 위한 설정
+Ⅰ
+@ media 규칙을 사용한 미디어 쿼리 사용하기
+92 반응형 웹을 위한 설정
+Ⅰ
+media 속성을 사용한 미디어 쿼리 사용하기
+print.css
+@media print {
+body {
+background-color: green;
+}
+}
+screen.css
+@media screen {
+body {
+background-color: red;
+}
+}
+102 반응형 웹을 위한 설정
+Ⅰ
+media_attribute.html media 속성을 사용한 미디어 쿼리 사용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query</title>
+<link rel="stylesheet" href="screen.css" media="screen">
+<link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc. Nulla cursus non urna eu elementum. Integer at mi auctor mi suscipit dapibus nec non orci. Sed at
+libero non augue ultricies euismod a non erat. Nunc ipsum nulla, scelerisque id enim nec, lobortis ornare leo.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras suscipit egestas felis, vitae bibendum mi
+ullamcorper at. Integer scelerisque cursus nunc, ultricies tincidunt ante tempus ut. Nam id convallis justo. Donec
+sagittis, magna at laoreet blandit, dolor lectus rutrum augue, in accumsan velit orci vitae elit. Vestibulum diam
+lectus, convallis porttitor velit eget, dignissim ullamcorper felis.</p>
+</body>
+</html>
+112 반응형 웹을 위한 설정
+Ⅰ
+media 속성을 사용한 미디어 쿼리 사용하기
+122 반응형 웹을 위한 설정
+Ⅰ
+media 속성을 사용한 미디어 쿼리 사용하기
+미디어 특징
+132 반응형 웹을 위한 설정
+Ⅰ
+미디어 특징을 사용해 장치를 구분하는 예.
+<link rel="stylesheet" href="phone.css" media="screen and (max-width: 767px)">
+<link rel="stylesheet" href="tablet.css"
+media="screen and (min-width: 768px) and (max-width: 959px)">
+<link rel="stylesheet" href="desktop.css" media="screen and (min-width: 960px)">
+142 반응형 웹을 위한 설정
+Ⅰ
+media_feature.html 스마트폰, 태블릿 PC, 데스크톱 구분
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Feature</title>
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+<style>
+/* 스마트폰 */
+@media screen and (max-width: 767px) {
+body { background-color: red; }
+}
+/* 태블릿PC */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+body { background-color: green; }
+}
+/* 데스크톱 */
+@media screen and (min-width: 960px) {
+body { background-color: blue; }
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+</body>
+</html> 152 반응형 웹을 위한 설정
+Ⅰ
+orientation.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Feature</title>
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+<style>
+@media screen and (orientation: portrait) {
+body { background-color: red; }
+}
+@media screen and (orientation: landscape) {
+body { background-color: green; }
+}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+</body>
+</html>
+163 반응형 웹 패턴
+Ⅰ
+메뉴가 왼쪽에 있다 화면을 좁게 했을 때는 위쪽으로 이동.
+173 반응형 웹 패턴
+Ⅰ
+메뉴가 오른쪽에 있다가 화면을 좁게 했을 때는 아래쪽으로 이동.
+183 반응형 웹 패턴
+Ⅰ
+반응형 웹 패턴을 4개 만들 수 있음.
+193 반응형 웹 패턴
+Ⅰ
+pattern1.html 반응형 웹 패턴 1
+<head>
+<title>패턴1</title> #section {
+<meta name="viewport" width: 700px;
+content="user-scalable=no,initial-scale=1,maximum- float: right; /* left로 입력해도 상관없음 */
+scale=1"> }
+<style>
+* { li { list-style: none; }
+margin: 0;
+padding: 0; @media screen and (max-width: 767px) {
+} /* 스마트폰 사이즈에서는 전부 해제합니다. */
+body { width: auto }
+body { #menu { width: auto; float: none; }
+width: 960px; #section { width: auto; float: none; }
+margin: 0 auto; }
+overflow: hidden; </style>
+} </head>
+#menu {
+width: 260px;
+float: left;
+}
+203 반응형 웹 패턴
+Ⅰ
+pattern1.html 반응형 웹 패턴 1
+<body>
+<div id="menu">
+<ul>
+<li>메뉴A</li>
+<li>메뉴B</li>
+<li>메뉴C</li>
+</ul>
+</div>
+<div id="section">
+<h1>Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc. Nulla cursus non urna eu elementum. Integer at mi auctor mi suscipit dapibus nec non orci. Sed at
+libero non augue ultricies euismod a non erat. Nunc ipsum nulla, scelerisque id enim nec, lobortis ornare leo.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras suscipit egestas felis, vitae bibendum mi
+ullamcorper at. Integer scelerisque cursus nunc, ultricies tincidunt ante tempus ut. Nam id convallis justo...</p>
+</div>
+</body>
+</html>
+213 반응형 웹 패턴
+Ⅰ
+pattern2.html 반응형 웹 패턴 2
+<style>
+…
+#menu {
+width: 260px;
+float: right;
+}
+#section {
+width: 700px;
+float: left;
+}
+li { list-style: none; }
+@media screen and (max-width: 767px) {
+/* 스마트폰 사이즈에서는 전부 해제합니다. */
+body { width: auto }
+#menu { width: auto; float: none; }
+#section { width: auto; float: none; }
+}
+</style>
+</head>
+…
+223 반응형 웹 패턴
+Ⅰ
+pattern3.html 반응형 웹 패턴 3
+<style>
+…
+#menu {
+width: 260px;
+float: left;
+}
+#section {
+width: 700px;
+float: right; /* left로 입력해도 상관없습니다. */
+}
+li { list-style: none; }
+@media screen and (max-width: 767px) {
+/* 스마트폰 사이즈에서는 전부 해제합니다. */
+body { width: auto }
+#menu { width: auto; float: none; }
+#section { width: auto; float: none; }
+}
+</style>
+</head>
+…
+233 반응형 웹 패턴
+Ⅰ
+pattern3.html 반응형 웹 패턴 3
+<body>
+<div id="section">
+<h1>Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra ex a augue porta, quis luctus eros
+sollicitudin. Nullam in turpis semper, lacinia justo a, facilisis lacus. Nunc odio nisi, lobortis sit amet diam et,
+vestibulum posuere risus. Donec viverra, risus a ultricies fringilla, lectus purus aliquet quam, sit amet commodo nisl
+mi vitae nunc. Nulla cursus non urna eu elementum. Integer at mi auctor mi suscipit dapibus nec non orci. Sed at
+libero non augue ultricies euismod a non erat. Nunc ipsum nulla, scelerisque id enim nec, lobortis ornare leo.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras suscipit egestas felis, vitae bibendum mi
+ullamcorper at...</p>
+</div>
+<div id="menu">
+<ul>
+<li>메뉴A</li>
+<li>메뉴B</li>
+<li>메뉴C</li>
+</ul>
+</div>
+</body>
+243 반응형 웹 패턴
+Ⅰ
+pattern4.html 반응형 웹 패턴 4
+<style>
+…
+#menu {
+width: 260px;
+float: right;
+}
+#section {
+width: 700px;
+float: left;
+}
+li { list-style: none; }
+@media screen and (max-width: 767px) {
+/* 스마트폰 사이즈에서는 전부 해제합니다. */
+body { width: auto }
+#menu { width: auto; float: none; }
+#section { width: auto; float: none; }
+}
+</style>
+25

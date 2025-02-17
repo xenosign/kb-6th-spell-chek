@@ -1,0 +1,396 @@
+2025년 상반기 K-디지털 트레이닝
+[KB] IT’s Your Life1 문서 객체 모델의 기본 용어와 개념
+Ⅰ
+문서 객체 모델 기본 용어
+ HTML 태그를 자바스크립트에서 사용할 수 있는 객체로 만든 것.
+ 요소노드와 텍스트 노드
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Object Model</title>
+<script>
+</script>
+</head>
+<body>
+<h1>Header</h1>
+<p>Lorem ipsum dolor amet</p>
+</body>
+</html>
+21 문서 객체 모델의 기본 용어와 개념
+Ⅰ
+문서 객체 모델 기본 용어
+<br>
+<hr>
+<img src="rintiantta.png">
+31 문서 객체 모델의 기본 용어와 개념
+Ⅰ
+dom_fault.html 실행 순서에 따른 문서 객체 사용 오류
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Object Model</title>
+<script>
+// h1 태그의 배경 색상을 변경합니다.
+document.querySelector('h1').style.backgroundColor = 'red';
+// h2 태그의 글자 색상을 변경합니다.
+document.querySelector('h2').style.color = 'red';
+</script>
+</head>
+<body>
+<h1>Process - 1</h1>
+<h2>Process - 2</h2>
+</body>
+</html>
+41 문서 객체 모델의 기본 용어와 개념
+Ⅰ
+dom_correct.html 해결방법1: script 태그 위치 옮기기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Object Model</title>
+</head>
+<body>
+<h1>Process - 1</h1>
+<h2>Process - 2</h2>
+<script>
+// h1 태그의 배경 색상을 변경합니다.
+document.querySelector('h1').style.backgroundColor = 'red';
+// h2 태그의 글자 색상을 변경합니다.
+document.querySelector('h2').style.color = 'red';
+</script>
+</body>
+</html>
+51 문서 객체 모델의 기본 용어와 개념
+Ⅰ
+dom_event.html 해결 방법 2: 이벤트 활용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Object Model</title>
+<script>
+window.onload = function () {
+// h1 태그의 배경 색상을 변경합니다.
+document.querySelector('h1').style.backgroundColor = 'red';
+// h2 태그의 글자 색상을 변경합니다.
+document.querySelector('h2').style.color = 'red';
+};
+</script>
+</head>
+<body>
+<h1>Process - 1</h1>
+<h2>Process - 2</h2>
+</body>
+</html>
+62 문서 객체 선택
+Ⅰ
+문서 객체 선택
+72 문서 객체 선택
+Ⅰ
+select_id.html getElementById( ) 메서드를 사용해 문서 객체 1개 선택하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Basic</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let header = document.getElementById('header');
+// 문서 객체를 조작합니다.
+header.style.color = 'orange';
+header.style.background = 'red';
+header.innerHTML = 'From JavaScript';
+};
+</script>
+</head>
+<body>
+<h1 id="header">Header</h1>
+</body>
+</html>
+82 문서 객체 선택
+Ⅰ
+select_query.html querySelector( ) 메서드를 사용해 문서 객체 1개 선택하기
+<head>
+<title>DOM Basic</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let header = document.querySelector('h1');
+// 문서 객체를 조작합니다.
+header.style.color = 'orange';
+header.style.background = 'red';
+header.innerHTML = 'From JavaScript';
+};
+</script>
+</head>
+<body>
+<h1>Header</h1>
+<h1>Header</h1>
+<h1>Header</h1>
+</body>
+92 문서 객체 선택
+Ⅰ
+select_all.html querySelectorAll( ) 메서드를 사용해 문서 객체 여러 개 선택하기
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let headers = document.querySelectorAll('h1');
+for (let i = 0; i < headers.length; i++) {
+// 변수를 선언합니다.
+let header = headers[i];
+// 문서 객체를 조작합니다.
+header.style.color = 'orange';
+header.style.background = 'red';
+header.innerHTML = 'From JavaScript';
+}
+};
+</script>
+</head>
+<body>
+<h1>Header</h1>
+<h1>Header</h1>
+<h1>Header</h1>
+</body> 103 문서 객체 조작
+Ⅰ
+글자 조작
+113 문서 객체 조작
+Ⅰ
+control_text.html 내부 글자 변경
+<head>
+<title>DOM Basic</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 변수를 선언합니다.
+let output = '';
+for (let i = 0; i < 10; i++) {
+output += '<h1>Header - ' + i + '</h1>';
+}
+// 문서 객체 내부의 글자를 변경합니다.
+document.body.textContent = output;
+// innerHTML 속성을 사용합니다.
+// document.body.innerHTML = output;
+};
+</script>
+</head>
+<body>
+</body>
+123 문서 객체 조작
+Ⅰ
+스타일 조작
+① let header = document.getElementById('header’);
+header.style.backgroundColor-color = 'red’;
+② let header = document.getElementById('header’);
+header.style.backgroundColor = 'red';
+133 문서 객체 조작
+Ⅰ
+control_style.html 스타일 조작
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 추가합니다.
+let output = '';
+for (let i = 0; i < 256; i++) {
+output += '<div></div>';
+}
+document.body.innerHTML = output;
+// 문서 객체를 선택합니다.
+let divs = document.querySelectorAll('div');
+for (let i = 0; i < divs.length; i++) {
+// 변수를 선언합니다.
+let div = divs[i];
+// 스타일을 적용합니다.
+div.style.height = '2px';
+div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+}
+};
+</script>
+</head>
+<body></body> 143 문서 객체 조작
+Ⅰ
+속성 조작
+153 문서 객체 조작
+Ⅰ
+control_attribute.html img 태그 속성 조작하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Basic</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 변수를 선언합니다.
+let image = document.getElementById('image');
+// 속성을 변경합니다.
+image.src = 'http://via.placeholder.com/300x200';
+image.width = 300;
+image.height = 200;
+};
+</script>
+</head>
+<body>
+<img id="image">
+</body>
+</html>
+163 문서 객체 조작
+Ⅰ
+control_body.html body 태그 속성 조작하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Basic</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 속성을 지정합니다.
+document.body.setAttribute('data-custom', 'value');
+// 속성을 추출합니다.
+let dataCustom = document.body.getAttribute('data-custom');
+alert(dataCustom);
+};
+</script>
+</head>
+<body>
+</body>
+</html>
+173 문서 객체 조작
+Ⅰ
+dom_clock.html 문서 객체 속성 조작
+<html>
+<head>
+<title>Clock</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let clock = document.getElementById('clock');
+// 1초마다 함수를 실행합니다.
+setInterval(function () {
+let now = new Date();
+clock.innerHTML = now.toString();
+}, 1000);
+};
+</script>
+</head>
+<body>
+<h1 id="clock"></h1>
+</body>
+</html>
+184 이벤트
+Ⅰ
+이벤트
+window.onload = function () { };
+194 이벤트
+Ⅰ
+이벤트 연결
+204 이벤트
+Ⅰ
+이벤트 연결
+ HTML 태그 내부에 자바스크립트 코드를 넣어 이벤트를 연결하는 방식.
+<태그 on이벤트="자바스크립트코드">…</태그>
+주로 함수 호출문을 지정
+214 이벤트
+Ⅰ
+event_inline.html 인라인 이벤트 모델 사용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Basic</title>
+</head>
+<body>
+<button onclick="alert('click')">버튼</button>
+</body>
+</html>
+224 이벤트
+Ⅰ
+event_inlineWithScript.html script 태그에 인라인 이벤트 모델 사용하기
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inline Event</title>
+<script>
+function buttonClick() {
+alert('click');
+}
+</script>
+</head>
+<body>
+<button onclick="buttonClick()">버튼</button>
+</body>
+</html>
+234 이벤트
+Ⅰ
+event_tradition.html 고전 이벤트 모델
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traditional Event</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let button = document.getElementById('button');
+// 이벤트를 연결합니다.
+button.onclick = function () {
+alert('click');
+};
+};
+</script>
+</head>
+<body>
+<button id="button">버튼</button>
+</body>
+</html>
+244 이벤트
+Ⅰ
+이벤트 사용
+254 이벤트
+Ⅰ
+event_object.html 이벤트 정보
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Object</title>
+<script>
+window.onload = function (event) {
+alert(event);
+console.log(event);
+};
+</script>
+</head>
+<body>
+</body>
+</html>
+264 이벤트
+Ⅰ
+이벤트 사용
+ 특정 태그가 가진 기본적인 이벤트.
+ <a>의 기본 이벤트
+⁃ href에 지정한 페이지로 이동
+⁃ 이벤트 핸들러에서 false를 리턴하면 기본 이벤트 핸들러 호출되지 않음
+274 이벤트
+Ⅰ
+event_defaulthtml.html 기본 이벤트 제거
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traditional Event - Default Event</title>
+<script>
+// 이벤트를 연결합니다.
+window.onload = function () {
+// 문서 객체를 선택합니다.
+let button = document.getElementById('button');
+// 이벤트를 연결합니다.
+button.onclick = function () {
+// 기본 이벤트를 제거합니다.
+return false;
+};
+};
+</script>
+</head>
+<body>
+<a id="button" href="http://hanbit.co.kr">버튼</a>
+</body>
+</html> 28
